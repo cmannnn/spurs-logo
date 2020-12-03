@@ -1,6 +1,9 @@
+# Write a program to draw some kind of picture. 
+# Be creative and experiment with the turtle methods provided in Summary of Turtle Methods.
+
 import turtle
 import math
-from matplotlib.backends.backend_pdf import PdfPages
+from Tkinter import *
 
 height = 1071
 width = 700
@@ -45,17 +48,9 @@ spurs.penup()
 # draw a semicircle
 # turtle.circle(120, 180)  
 
-pdf.savefig(spurs)
+screen = turtle.getscreen()
+
+ts.getcanvas().postscript(file='spurs.eps')
 
 
 #screen.exitonclick()
-
-
-
-
-
-
-
-
-
-
